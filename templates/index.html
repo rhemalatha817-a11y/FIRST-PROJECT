@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pattern Matching</title>
+</head>
+<body>
+
+<h2>Pattern Matching (Python + Flask)</h2>
+
+<form method="POST">
+    Enter Text:<br>
+    <input type="text" name="text"><br><br>
+
+    Enter Pattern:<br>
+    <input type="text" name="pattern"><br><br>
+
+    <button type="submit">Find Pattern</button>
+</form>
+
+{% if result is not none %}
+    <h3>Pattern found at index: {{ result }}</h3>
+    <h4>Execution Time: {{ exec_time }}</h4>
+{% endif %}
+
+</body>
+</html>
